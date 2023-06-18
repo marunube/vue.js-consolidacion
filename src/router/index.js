@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import CreditView from '../views/CreditView.vue'
+import GameAlone from '../views/GameAlone.vue'
 
 Vue.use(VueRouter)
 
@@ -22,10 +23,15 @@ const routes = [
     path: '/credit',
     name: 'credit',
     component: CreditView,
+  },{
+    path: '/game/:id/',
+    name: 'game',
+    component: GameAlone,
   }
 ]
 
 const router = new VueRouter({
+  mode: 'history',
   routes
 })
 

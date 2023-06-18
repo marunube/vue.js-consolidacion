@@ -1,6 +1,7 @@
 <template>
 <div class="credit">
-<h1>This is an credit page</h1>
+    
+<h1></h1>
 </div>
 </template>
 
@@ -8,5 +9,10 @@
 
 export default {
     name: 'CreditView',
+    component: {
+
+    }
 }
+
+
 </script>
